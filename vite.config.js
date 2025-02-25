@@ -1,12 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import path from "path";
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "src"), // This allows "@/components/ui" to work
-    },
-  },
+  base: "/Web-Content-AQ-Tool/",  // Set this to your repo name
 });
